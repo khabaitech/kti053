@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact me</title>
+	 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<form>
+  <div class="custom-control custom-switch">
+    <input type="checkbox" class="custom-control-input" id="switch1">
+    <label class="custom-control-label" for="switch1">Toggle me</label>
+  </div>
+</form>
+
+
+
+
+
+<form>
+  <div class="custom-control custom-radio">
+    <input type="radio" class="custom-control-input" id="customRadio" name="example1" value="customEx">
+    <label class="custom-control-label" for="customRadio">Custom radio</label>
+  </div>
+</form>
+
+
+
+
+
+
+
+<form>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="customRadio" name="example" value="customEx">
+    <label class="custom-control-label" for="customRadio">Custom radio 1</label>
+  </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="customRadio2" name="example" value="customEx">
+    <label class="custom-control-label" for="customRadio2">Custom radio 2</label>
+  </div>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+  <select name="cars" class="custom-select">
+    <option selected>Custom Select Menu</option>
+    <option value="volvo">Volvo</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+
+
+
+
+
+
+
+
+
+  <!-- Small -->
+  <select name="cars" class="custom-select custom-select-sm">
+    <option selected>Small Custom Select Menu</option>
+    <option value="volvo">Volvo</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+
+  <!-- Large -->
+  <select name="cars" class="custom-select custom-select-lg">
+    <option selected>Large Custom Select Menu</option>
+    <option value="volvo">Volvo</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+
+
+
+
+
+
+
+
+
+
+  <label for="customRange">Custom range</label>
+  <input type="range" class="custom-range" id="customRange" name="points1">
+
+
+
+
+
+
+
+
+
+
+  <form action="/action_page.php bg-success" style="border:03px solid #1bfe;
+    ">
+    <p>Custom file:</p>
+    <div class="custom-file mb-3">
+      <input type="file" class="custom-file-input" id="customFile" name="filename">
+      <label class="custom-file-label" for="customFile">Choose file</label>
+    </div>
+    
+    <p>Default file:</p>
+    <input type="file" id="myFile" name="filename2">
+  
+    <div class="mt-3">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1z_Cso9FY4f7wyMDjPU8aeQ9JVurU4Gm6qCxqCdDbtZlnKQ/viewform?embedded=true" width="1540" height="581">Loading…</iframe>
+    </div>
+  </form>
+</div>
+
+<script>
+// Add the following code if you want the name of the file appear on select
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+</script>
+
+</div>
+</body>
+</html>
